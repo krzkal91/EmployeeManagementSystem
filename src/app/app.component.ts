@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Title} from "@angular/platform-browser";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'EmployeeManagementSystem';
+  title = 'Employee Management System';
+
+  constructor(private tiler: Title) {
+      this.tiler.setTitle(this.title);
+  }
+
+  resetTitle() {
+    this.tiler.setTitle(this.title);
+  }
 }

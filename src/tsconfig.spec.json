@@ -1,0 +1,18 @@
+{
+  "extends": "../../../Downloads/angular-gmvuy2-2/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "test.ts",
+    "polyfills.ts"
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
